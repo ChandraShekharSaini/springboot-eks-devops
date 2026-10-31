@@ -26,21 +26,16 @@ spec:
           ports:
             - containerPort: 8084
 
+          envFrom:
+            - configMapRef:
+                name: backend-config
+
           env:
-            - name: SERVER_PORT
-              value: "8084"
-
-            - name: MYSQL_HOST
-              value: "shopping-mysql.cmhweau0gvzd.us-east-1.rds.amazonaws.com"
-
-            - name: MYSQL_USERNAME
-              value: "admin"
-
             - name: MYSQL_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: mysql-secret
-                  key: password
+                  key: MYSQL_PASSWORD
 
 ---
 
