@@ -3,10 +3,10 @@ name: CI/CD for app
 on:
   workflow_dispatch:
 
-  # Enable later if you want automatic deployment
-  # push:
-  #   branches:
-  #     - main
+  Enable later if you want automatic deployment
+  push:
+    branches:
+      - main
 
 # ==========================================================
 # GLOBAL ENVIRONMENT VARIABLES
