@@ -3,7 +3,7 @@ name: CI/CD for app
 on:
   workflow_dispatch:
 
-  Enable later if you want automatic deployment
+  # Enable later if you want automatic deployment
   push:
     branches:
       - main
