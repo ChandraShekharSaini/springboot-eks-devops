@@ -3,8 +3,9 @@ kind: ConfigMap
 metadata:
   name: backend-config
   namespace: project-1
-
 data:
-  SERVER_PORT: "8084"
-  MYSQL_HOST: "shopping-mysql.ca1qsou4qrd6.us-east-1.rds.amazonaws.com"
-  MYSQL_USERNAME: "backenduser"
+  DB_HOST: "<YOUR_RDS_ENDPOINT>"
+  DB_PORT: "3306"
+  DB_NAME: "shopping"
+  DB_USERNAME: "backenduser"
+  AWS_REGION: "us-east-1"
