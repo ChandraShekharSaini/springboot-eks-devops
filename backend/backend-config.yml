@@ -6,5 +6,5 @@ metadata:
 
 data:
   SERVER_PORT: "8084"
-  MYSQL_HOST: "shopping-mysql.cde0240wiar0.us-east-1.rds.amazonaws.com"
+  MYSQL_HOST: "shopping-mysql.ck7comwkm9zm.us-east-1.rds.amazonaws.com"
   MYSQL_USERNAME: "admin"
