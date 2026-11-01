@@ -1,6 +1,6 @@
+
 apiVersion: apps/v1
 kind: Deployment
-
 metadata:
   name: backend
   namespace: project-1
@@ -22,7 +22,6 @@ spec:
 
       containers:
         - name: backend
-
           image: 701055077395.dkr.ecr.us-east-1.amazonaws.com/shopping-site-backend:64209446fc6e2949f48dbf16384447947db4a4be
 
           ports:
@@ -39,11 +38,12 @@ spec:
                   name: mysql-secret
                   key: MYSQL_PASSWORD
 
+
 ---
+
 
 apiVersion: v1
 kind: Service
-
 metadata:
   name: backend-service
   namespace: project-1
