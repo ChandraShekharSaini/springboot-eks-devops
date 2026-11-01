@@ -1,1 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: project-1
 
+data:
+  SERVER_PORT: "8084"
+  MYSQL_HOST: "shopping-mysql.cde0240wiar0.us-east-1.rds.amazonaws.com"
+  MYSQL_USERNAME: "admin"
