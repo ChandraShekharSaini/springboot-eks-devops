@@ -1,0 +1,5 @@
+pipeline:
+  stages:
+    - steps:
+        - run:
+            script: echo "hello world"
