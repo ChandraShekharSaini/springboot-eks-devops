@@ -1,8 +1,0 @@
-environment:
-  name: environment_env_b056
-  identifier: environment_env_b056
-  description: ""
-  tags: {}
-  type: PreProduction
-  orgIdentifier: default
-  projectIdentifier: default_project
